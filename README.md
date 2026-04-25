@@ -13,3 +13,8 @@ Dashboard web com backend em Node.js e frontend em React, garantindo visualizaç
 - Login de usuário
 - Visualização de gráficos de emissão de CO₂
 - Exportação de dados em CSV
+# Projeto ODS: Dashboard de Sustentabilidade
+
+## Documentação
+
+- [TP2 - Projeto de Software](docs/tp2-projeto-software.md)
