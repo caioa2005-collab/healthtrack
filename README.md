@@ -3,35 +3,26 @@
 **Aluno:** Caio Augusto C. G.  
 **ODS escolhido:** ODS 13 – Ação contra a mudança global do clima
 
-## Descrição
+## Entrega TP5
 
-Este projeto tem como objetivo desenvolver um dashboard web interativo para visualização de dados de emissão de CO₂ por país, promovendo conscientização ambiental e facilitando o acesso a informações sobre mudanças climáticas.
+Nesta sprint, o sistema iniciado nos TPs anteriores foi evoluído e os testes planejados no TP4 foram executados de forma manual.
 
-## Entrega TP3
+## Funcionalidades disponíveis
 
-Nesta sprint foi desenvolvido um primeiro entregável funcional do sistema, contendo:
-
-- Backend em Node.js com Express;
-- API REST com dados simulados de emissão de CO₂;
-- Frontend em React;
-- Visualização de dados em gráfico;
+- Login simples de usuário;
+- Dashboard com dados de emissão de CO₂;
 - Filtro por país;
-- Exportação de dados em CSV;
-- Documentação da sprint TP3;
-- Planejamento das atividades do TP4.
+- Filtro por ano;
+- Limpeza de filtros;
+- Gráfico de emissão de CO₂;
+- Tabela com dados;
+- Exportação CSV;
+- Documentação dos testes executados;
+- Planejamento do TP6.
 
-## Estrutura do projeto
+## Como executar
 
-```text
-/
-├── backend
-├── frontend
-├── docs
-├── Videos
-└── README.md
-```
-
-## Como executar o backend
+### Backend
 
 ```bash
 cd backend
@@ -39,21 +30,9 @@ npm install
 npm start
 ```
 
-O backend será executado em:
+URL: `http://localhost:3001`
 
-```text
-http://localhost:3001
-```
-
-Rota principal:
-
-```text
-GET http://localhost:3001/api/co2
-```
-
-## Como executar o frontend
-
-Em outro terminal:
+### Frontend
 
 ```bash
 cd frontend
@@ -61,25 +40,17 @@ npm install
 npm run dev
 ```
 
-O frontend será executado em:
+URL: `http://localhost:5173`
 
-```text
-http://localhost:5173
-```
+## Usuário de teste
 
-## Funcionalidades implementadas no TP3
+E-mail: `aluno@teste.com`  
+Senha: `123456`
 
-- Consulta de dados de emissão de CO₂;
-- Exibição dos dados em tabela;
-- Exibição dos dados em gráfico;
-- Filtro por país;
-- Exportação CSV;
-- Interface web inicial do dashboard.
+## Documentação
 
-## Planejamento para o TP4
-
-- Implementar autenticação de usuários;
-- Melhorar a responsividade da interface;
-- Integrar uma API externa real de dados climáticos;
-- Adicionar novos gráficos;
-- Melhorar validações e tratamento de erros.
+- `docs/tp5-sprint-desenvolvimento.md`
+- `docs/plano-de-testes.md`
+- `docs/resultado-execucao-testes.md`
+- `docs/planejamento-tp6.md`
+- `Videos/roteiro-video-tp5.md`
