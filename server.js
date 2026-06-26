@@ -15,7 +15,10 @@ const usuarioTeste = {
 };
 
 app.get("/", (req, res) => {
-  res.json({ mensagem: "API do Dashboard de Sustentabilidade - TP5", status: "online" });
+  res.json({
+    mensagem: "API do Dashboard de Sustentabilidade - Entrega Final",
+    status: "online"
+  });
 });
 
 app.post("/api/login", (req, res) => {
@@ -28,15 +31,23 @@ app.post("/api/login", (req, res) => {
     });
   }
 
-  return res.status(401).json({ autenticado: false, mensagem: "E-mail ou senha inválidos." });
+  return res.status(401).json({
+    autenticado: false,
+    mensagem: "E-mail ou senha inválidos."
+  });
 });
 
 app.get("/api/co2", (req, res) => {
   const { pais, ano } = req.query;
   let resultado = co2Data;
 
-  if (pais) resultado = resultado.filter(item => item.pais.toLowerCase() === pais.toLowerCase());
-  if (ano) resultado = resultado.filter(item => item.ano === Number(ano));
+  if (pais) {
+    resultado = resultado.filter(item => item.pais.toLowerCase() === pais.toLowerCase());
+  }
+
+  if (ano) {
+    resultado = resultado.filter(item => item.ano === Number(ano));
+  }
 
   res.json(resultado);
 });
@@ -50,7 +61,9 @@ app.get("/api/co2/anos", (req, res) => {
 });
 
 app.get("/api/status", (req, res) => {
-  res.json({ backend: "online", versao: "TP5", totalRegistros: co2Data.length });
+  res.json({ backend: "online", versao: "TP6", totalRegistros: co2Data.length });
 });
 
-app.listen(PORT, () => console.log(`Servidor rodando em http://localhost:${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+});

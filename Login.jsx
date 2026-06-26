@@ -8,6 +8,7 @@ function Login({ onLogin }) {
 
   async function entrar(event) {
     event.preventDefault();
+
     try {
       setErro("");
       const resposta = await login(email, senha);

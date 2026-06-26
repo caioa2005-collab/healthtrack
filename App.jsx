@@ -15,8 +15,7 @@ function App() {
   async function carregarDados(pais = "", ano = "") {
     try {
       setErro("");
-      const resultado = await buscarDadosCo2(pais, ano);
-      setDados(resultado);
+      setDados(await buscarDadosCo2(pais, ano));
     } catch {
       setErro("Não foi possível carregar os dados.");
     }
@@ -58,11 +57,9 @@ function App() {
 
   function exportarCSV() {
     if (dados.length === 0) return;
-
     const cabecalho = "pais,ano,emissao\n";
     const linhas = dados.map(item => `${item.pais},${item.ano},${item.emissao}`).join("\n");
     const arquivo = new Blob([cabecalho + linhas], { type: "text/csv;charset=utf-8;" });
-
     const url = URL.createObjectURL(arquivo);
     const link = document.createElement("a");
     link.href = url;
@@ -81,7 +78,7 @@ function App() {
           <button className="secondary" onClick={() => setUsuario(null)}>Sair</button>
         </div>
         <h1>Dashboard de Sustentabilidade</h1>
-        <p>TP5 - Evolução do sistema com execução de testes manuais.</p>
+        <p>Entrega final do sistema para visualização de emissão de CO₂ por país e ano.</p>
         <small>Usuário logado: {usuario.nome}</small>
       </header>
 

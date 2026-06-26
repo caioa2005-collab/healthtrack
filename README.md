@@ -3,26 +3,51 @@
 **Aluno:** Caio Augusto C. G.  
 **ODS escolhido:** ODS 13 – Ação contra a mudança global do clima
 
-## Entrega TP5
+## Descrição do projeto
 
-Nesta sprint, o sistema iniciado nos TPs anteriores foi evoluído e os testes planejados no TP4 foram executados de forma manual.
+Aplicação web para visualização de dados de emissão de CO₂ por país e ano. O projeto facilita a compreensão de dados ambientais por meio de gráficos, filtros, tabela e exportação CSV.
 
-## Funcionalidades disponíveis
+## Problema abordado
 
-- Login simples de usuário;
-- Dashboard com dados de emissão de CO₂;
+Dados ambientais normalmente são difíceis de interpretar quando apresentados em relatórios extensos ou planilhas. O projeto busca tornar esses dados mais acessíveis e visuais.
+
+## Solução proposta
+
+Dashboard web com:
+
+- Login simples;
+- Gráfico de emissão de CO₂;
 - Filtro por país;
 - Filtro por ano;
-- Limpeza de filtros;
-- Gráfico de emissão de CO₂;
-- Tabela com dados;
+- Tabela de dados;
 - Exportação CSV;
-- Documentação dos testes executados;
-- Planejamento do TP6.
+- Backend com API REST;
+- Frontend em React.
 
-## Como executar
+## Tecnologias
 
-### Backend
+| Camada | Tecnologia |
+|---|---|
+| Frontend | React + Vite |
+| Backend | Node.js + Express |
+| Gráficos | Recharts |
+| Comunicação | HTTP/JSON |
+| Versionamento | Git + GitHub |
+
+## Estrutura
+
+```text
+/
+├── backend
+├── frontend
+├── docs
+├── Videos
+├── tests
+├── README.md
+└── .gitignore
+```
+
+## Como executar o backend
 
 ```bash
 cd backend
@@ -30,9 +55,9 @@ npm install
 npm start
 ```
 
-URL: `http://localhost:3001`
+Backend: `http://localhost:3001`
 
-### Frontend
+## Como executar o frontend
 
 ```bash
 cd frontend
@@ -40,7 +65,7 @@ npm install
 npm run dev
 ```
 
-URL: `http://localhost:5173`
+Frontend: `http://localhost:5173`
 
 ## Usuário de teste
 
@@ -49,8 +74,13 @@ Senha: `123456`
 
 ## Documentação
 
-- `docs/tp5-sprint-desenvolvimento.md`
+- `docs/documentacao-final.md`
+- `docs/manual-do-usuario.md`
+- `docs/arquitetura-c4.md`
 - `docs/plano-de-testes.md`
 - `docs/resultado-execucao-testes.md`
-- `docs/planejamento-tp6.md`
-- `Videos/roteiro-video-tp5.md`
+
+## Vídeo final
+
+- `Videos/apresentacao-tp6.mp4`
+- `Videos/roteiro-video-tp6.md`

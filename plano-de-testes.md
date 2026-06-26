@@ -15,30 +15,30 @@
 
 | TC | Descrição | Entrada | Resultado esperado |
 |---|---|---|---|
-| TC04 | Carregar gráfico ao entrar no dashboard | Login válido | Gráfico é exibido com dados |
-| TC05 | Visualizar dados de todos os países | Sem filtro | Gráfico exibe registros gerais |
-| TC06 | Verificar atualização do gráfico | Aplicar filtro | Gráfico é atualizado |
+| TC04 | Carregar gráfico ao entrar | Login válido | Gráfico exibido com dados |
+| TC05 | Visualizar todos os países | Sem filtro | Gráfico exibe registros gerais |
+| TC06 | Atualizar gráfico | Aplicar filtro | Gráfico é atualizado |
 
 ## UC03 - Filtrar dados
 
 | TC | Descrição | Entrada | Resultado esperado |
 |---|---|---|---|
-| TC07 | Filtrar por país | Brasil | Tabela e gráfico exibem apenas Brasil |
-| TC08 | Filtrar por ano | 2022 | Tabela e gráfico exibem apenas 2022 |
-| TC09 | Filtrar por país e ano | China + 2023 | Sistema exibe apenas o registro correspondente |
+| TC07 | Filtrar por país | Brasil | Exibe apenas Brasil |
+| TC08 | Filtrar por ano | 2022 | Exibe apenas 2022 |
+| TC09 | Filtrar por país e ano | China + 2023 | Exibe apenas registro correspondente |
 
 ## UC04 - Exportar CSV
 
 | TC | Descrição | Entrada | Resultado esperado |
 |---|---|---|---|
-| TC10 | Exportar dados gerais | Sem filtro | Arquivo CSV é baixado |
-| TC11 | Exportar dados filtrados por país | Brasil | CSV contém apenas dados do Brasil |
-| TC12 | Exportar dados filtrados por ano | 2023 | CSV contém apenas dados de 2023 |
+| TC10 | Exportar dados gerais | Sem filtro | CSV é baixado |
+| TC11 | Exportar dados filtrados por país | Brasil | CSV contém apenas Brasil |
+| TC12 | Exportar dados filtrados por ano | 2023 | CSV contém apenas 2023 |
 
 ## UC05 - Sair do sistema
 
 | TC | Descrição | Entrada | Resultado esperado |
 |---|---|---|---|
-| TC13 | Clicar em sair | Botão Sair | Sistema retorna para tela de login |
-| TC14 | Sair após aplicar filtros | Filtro aplicado + sair | Sistema retorna para tela de login |
-| TC15 | Entrar novamente após sair | Login válido | Sistema acessa o dashboard novamente |
+| TC13 | Clicar em sair | Botão Sair | Retorna ao login |
+| TC14 | Sair após filtros | Filtro aplicado + sair | Retorna ao login |
+| TC15 | Entrar novamente após sair | Login válido | Acessa dashboard novamente |
